@@ -1,0 +1,133 @@
+/* 
+# Colors
+- Background - #2B2A30
+- Red - #9d0000
+- Green - #00aa51
+
+# Typography
+- **Timer Amount** - Bebas Neue - Book
+- **Start/Stop** - [Montserrat](https://fonts.google.com/specimen/Montserrat?query=mont) - Bold
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap');
+
+
+
+@font-face {
+    font-family: "bebas";
+    src: url(fonts/bebasneue-book-webfont.woff) format("woff"),
+    url(fonts/bebasneue-book-webfont.woff2) format("woff2");
+}
+
+body{
+    background-color: #2B2A30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    padding: 0;
+}
+
+.wraper{
+    box-shadow: -5px 14px 44px #000000, 5px -16px 50px rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    height: 518px;
+    width: 518px;
+    display: flex;
+    justify-content: center; /* horiz */
+    align-items: center;  /* vert */
+    position: relative;
+}
+
+.ring{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    stroke: rgb(243, 21, 132);
+}
+
+/* this is for "end status" when it has JS */
+.ring.ending circle{
+    stroke: blue;
+}
+
+.timer{
+    background: radial-gradient(71.4% 71.4% at 51.7% 28.6%, #534f65 0%, #17171A 100%);
+    box-shadow: inset 0px 0px 114px rgba(0, 0, 0, 0.45);
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.time{
+    display: flex;
+    font-family: "bebas";
+    font-size: 196px;
+    margin: 30px auto;
+    top: 30px;
+}
+
+input[type="text"]{
+    border: 0;
+    border-bottom: 1px dashed white;
+    background: none;
+    color: white;
+    font-size: 196px;
+    width: 150px;
+    text-align: center;
+    font-family: "bebas";
+    outline: none;
+    height: 170px;
+}
+
+input[type="text"]:disabled{
+    border-bottom: none;
+}
+/* This is to mark it status as disabled, so the dashed border is not visible
+when adding JS: by deleting ".disabled" in html it appears as edditable*/
+
+.start{
+    background: none;
+    border: none;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    opacity: .5;
+    margin-bottom: 20px;
+}
+
+.start:hover{
+    opacity: 1;
+}
+
+.settings{
+    background: none;
+    border: none;
+    cursor: pointer;
+    opacity: 0.5;
+    align-items: center;
+    display: flex;
+    color: transparent;
+    -ms-flex-direction: column;
+        flex-direction: column;
+}
+
+.settings:hover{
+    opacity: 1;
+}
+
+

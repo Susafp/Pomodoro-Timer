@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pomodoro Timer</title>
+</head>
+<body>
+    <div class="wraper">
+        <div class="ring">
+            <svg with="518" height="518" viewbox="0 0 518 518">
+                <circle stroke-width="9px" x="0" y="y" cx="259" cy="259" r="254" fill="colour"/>
+                <!-- cx and cy is to find the center of the circle
+                     r is for radius -->
+            </svg>
+        </div>
+
+        <div class="timer ending">
+            <div class="time">
+                <div class="minutes">
+                    <input type="text" name="minutes" value="00" title="minutes" > <!--was disabled-->
+                </div>
+                <div class="colon">:</div>
+                <div class="seconds">
+                    <input type="text" name="seconds" value="05" title="seconds" > <!--was disabled-->
+                </div>
+            </div>
+            <button class="start pause" type="button">start</button>
+            <button class="settings" type="button">settings <img src="images/gear.svg" alt="Settings"></button>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
