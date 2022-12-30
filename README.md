@@ -36,7 +36,7 @@ This project makes part of Advent of CSS and JavaScript challenges, released by 
 ## Author
 
 - Susana Fragoso Pato - [@Susafp](#)
-- Portfolio - (https://susafp.github.io/portfolio/)
+- Portfolio - https://susafp.github.io/portfolio/
 - Linkedin - [Susana-fP](https://www.linkedin.com/in/susana-fp/)
 
 
